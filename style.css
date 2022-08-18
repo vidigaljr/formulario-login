@@ -1,0 +1,98 @@
+html{
+    height:100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url(fundo.jpg) ;
+}
+
+#login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background-color: rgb(243, 232, 197);
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 2px 2px rgba(99, 83, 70, 0.6);
+}
+
+#login-box h1{
+    margin: 0 0 30px;
+    padding: 0;
+    color:#534433;
+    text-align: center;
+}
+
+#login-box .user-box {
+    position:relative;
+}
+
+#login-box .user-box input {
+    width:100%;
+    padding: 20px 0;
+    font-size: 16px;
+    color:rgb(202, 123, 18);
+    margin-bottom: 30px;
+    border: none;
+    border-bottom:1px solid rgb(156, 136, 93);
+    outline: none;
+    background:inherit;
+    
+}
+
+#login-box .user-box label {
+    position:absolute;
+    top: 0px;
+    left: 0;
+    padding: 0px 0;
+    font-size: 16px;
+    color: rgb(124, 99, 61);
+    pointer-events: none;
+    transition: .3s;
+}
+
+#login-box .user-box input:focus ~ label,
+#login-box .user-box input:focus ~ label {
+
+    top: -10px;
+    left: 0;
+    color:rgb(221, 149, 14);
+    font-size: 16px;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+
+}
+
+#login-box form a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(110, 98, 73);
+    color:rgb(236, 212, 191);
+    border-radius:5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow:hidden;
+    transition: .5s;
+    margin-top: 20px;
+    letter-spacing: 5px;
+}
+
+#login-box a:hover{
+    background-color:black;
+    color:rgb(230, 147, 23);
+    border-radius: 6px;
+    box-shadow: 0 0 5px black,
+                0 0 25px black,
+                0 0 50px black,
+                0 0 100px black,
+}
